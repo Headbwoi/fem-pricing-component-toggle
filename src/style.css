@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    font-size: 15px;
+    font-weight: 700;
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg-top.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 180px top;
+    z-index: -1;
+}
+@media (min-width: 768px) {
+  body::before{
+    width: 40vw;
+    background-size: 65%;
+  }
+}
+body::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg-bottom.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: -5px bottom;
+    z-index: -1;
+}
+@media (min-width: 768px) {
+  body::after{
+    width: 30vw;
+    background-size: 80%;
+  }
+}
+.toggle label input[type="checkbox"]{
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+  }
+  
+  label .check{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 30px;
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: ease-in .5s ;
+  }
+  label .check:hover .check::before{
+      opacity: .5;
+  }
+  label .check::before{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    background: #fff;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    transition: .5s;
+  }
+  label input[type="checkbox"]:checked ~ .check::before{
+    top: 50%;
+    left: 10px;
+    transform: translate(-5px, -50%);
+  
+  }
+.special:hover{
+    background: transparent;
+}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+/* 
+- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weight: 700
+ */
