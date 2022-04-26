@@ -25,9 +25,7 @@ Users should be able to:
 - **Bonus**: Complete the challenge with just HTML and CSS
 
 ### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [click here](https://headbwoi.github.io/fem-pricing-component-toggle/)
 
 ## My process
 
@@ -37,7 +35,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
-- [Tailwind-css](https://tailwindcss.com/) - JS library
+- [Tailwind-css](https://tailwindcss.com/) - CSS Framework
 
 ### What I learned
 
